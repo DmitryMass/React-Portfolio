@@ -1,11 +1,11 @@
 import React from "react";
-
-import styles from "../in.m.css";
+import svgimg from "../Assets/Icons/test.svg";
 
 const App = () => {
   return (
     <>
-      <div className={styles.title}>Hello World</div>
+      <div className="title">Hello World</div>
+      <object data={svgimg} type=""></object>
     </>
   );
 };
