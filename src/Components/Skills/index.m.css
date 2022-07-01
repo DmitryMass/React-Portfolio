@@ -1,0 +1,16 @@
+.main {
+  padding: 60px 0;
+  background: var(--blue-neutral);
+}
+.main__skills {
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.main__mySkill {
+  color: var(--white);
+  font-size: var(--fs-md);
+  line-height: var(--lh-hg);
+  text-shadow: 0 0 4px var(--white);
+  padding-bottom: 25px;
+}

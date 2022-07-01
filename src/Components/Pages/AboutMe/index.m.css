@@ -1,0 +1,45 @@
+.main {
+  padding: 60px 0;
+}
+/* 
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: 110% 120%; */
+
+.main__mySkill {
+  color: var(--coral);
+  font-size: var(--fs-the-mdest);
+  line-height: var(--lh-hg);
+  font-weight: var(--fw-bold);
+  padding-bottom: 10px;
+}
+
+.main__skill {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-md);
+  font-weight: var(--fw-normal);
+  list-style: disc;
+  padding-bottom: 5px;
+}
+.main__skill::marker {
+  color: var(--coral);
+}
+
+.main__subtitle {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: var(--fw-bold);
+  padding-bottom: 15px;
+}
+
+.main__degree,
+.main__project,
+.main__experience {
+  padding-bottom: 10px;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+}
+
+.main__project {
+  display: inline-block;
+}

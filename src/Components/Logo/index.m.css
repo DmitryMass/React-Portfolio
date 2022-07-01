@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: var(--fw-normal);
+  font-family: 'Rubik Moonrocks', cursive;
+}
+
+.logo > object {
+  width: 35px;
+}
+.logo > span {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  color: var(--coral);
+  margin-top: 2px;
+}
