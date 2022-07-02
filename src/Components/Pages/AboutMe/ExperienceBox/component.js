@@ -10,8 +10,8 @@ const ExperienceBox = () => {
       <p className={styles.main__experience}>Sale of non-food products</p>
       <p className={styles.main__experience}>Interview of new employees</p>
       <p className={styles.main__experience}>
-        Work with goods, cash registers, deliveries, processing of documents,
-        invoices, etc
+        Work with goods, cash registers, <br /> deliveries, processing of
+        documents, invoices, etc
       </p>
     </div>
   );

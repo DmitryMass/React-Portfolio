@@ -1,0 +1,31 @@
+.fe__certificate {
+  padding-top: 50px;
+}
+.fe__basic {
+  padding-bottom: 30px;
+}
+.fe__basic,
+.fe__pro {
+  text-align: center;
+}
+.fe__basic > a,
+.fe__pro > a {
+  display: block;
+  padding-top: 15px;
+  font-size: var(--fs-md);
+  text-align: center;
+}
+
+.fe__basic_img,
+.fe__pro_img {
+  cursor: zoom-in;
+  max-width: 550px;
+  transition: all 0.2s;
+}
+.fe__basic_active,
+.fe__pro_active {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  cursor: zoom-out;
+}

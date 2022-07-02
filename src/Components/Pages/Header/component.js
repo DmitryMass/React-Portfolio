@@ -1,18 +1,19 @@
-import { nanoid } from 'nanoid';
 import React from 'react';
 import { Link } from 'react-router-dom';
 //
 import { headerLink } from '../../Data/component';
-//
+import GitnLinkedin from './GitnLinkedin/component';
 import Logo from '../../Logo/component';
+//
+import { nanoid } from 'nanoid';
 import github from '../../../Assets/Icons/github.svg';
 import linkedin from '../../../Assets/Icons/linkedin.svg';
 //
 import styles from './index.m.css';
 
-const Header = () => {
+const Header = ({ handleClick, scrolls }) => {
   return (
-    <header className={styles.header}>
+    <header ref={scrolls} className={styles.header}>
       <div className="container header__flex">
         <Logo />
         <nav>
@@ -26,24 +27,22 @@ const Header = () => {
                 </li>
               );
             })}
+            <li>
+              <button
+                onClick={handleClick}
+                className={`default__btn ${styles.header__link}`}
+                type="button"
+              >
+                Contact
+              </button>
+            </li>
           </ul>
         </nav>
-        <div className="flex__container">
-          <a
-            className={styles.header__network}
-            href="https://github.com/DmitryMass"
-            target="blank"
-          >
-            <object data={github} type=""></object>
-          </a>
-          <a
-            className={styles.header__network}
-            href="https://www.linkedin.com/in/dmitry-moskalenko-69a19a226/"
-            target="blank"
-          >
-            <object data={linkedin} type=""></object>
-          </a>
-        </div>
+        <GitnLinkedin
+          linkStyle={styles.header__network}
+          gitHub={github}
+          linkedin={linkedin}
+        />
       </div>
     </header>
   );

@@ -5,9 +5,9 @@ import { nanoid } from 'nanoid';
 import styles from './index.m.css';
 import Logo from '../../Logo/component';
 
-const Footer = () => {
+const Footer = ({ scrolls, handleLogoClick }) => {
   return (
-    <footer className={styles.footer}>
+    <footer ref={scrolls} className={styles.footer}>
       <div className="container flex__wrap-wrap">
         <ul>
           {contactList.map(({ title, picture }) => {
@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
         <div className={styles.footer__designed}>
           Designed by
-          <Logo />
+          <Logo handleLogoClick={handleLogoClick} />
         </div>
       </div>
     </footer>

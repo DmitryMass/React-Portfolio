@@ -7,21 +7,25 @@ import SummaryBox from './SummaryBox/component';
 import ExperienceBox from './ExperienceBox/component';
 import SoftSkillsBox from './SoftSkillBox/component';
 import LanguageBox from './LanguageBox/component';
+import Certificate from './Certificate/component';
 
 const About = () => {
   return (
     <main className={styles.main}>
       <div className="container">
-        <div className="about__flex">
+        <SummaryBox />
+        <div className={`cv__flex ${styles.info__second}`}>
           <SkillBox />
-          <SummaryBox />
-          <EducationBox />
+          <div className="info__third">
+            <EducationBox />
+            <LanguageBox />
+          </div>
         </div>
-        <div className="about__flex ">
+        <div className={styles.info__last}>
           <ExperienceBox />
           <SoftSkillsBox />
-          <LanguageBox />
         </div>
+        <Certificate />
       </div>
     </main>
   );

@@ -17,10 +17,6 @@ export const headerLink = [
     title: 'Portfolio',
     link: ROUTES.PORTFOLIO,
   },
-  {
-    title: 'Contact',
-    link: ROUTES.CONTACT,
-  },
 ];
 
 export const contactList = [

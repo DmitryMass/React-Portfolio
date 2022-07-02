@@ -43,6 +43,8 @@
   --container-md: 992px;
   --container-sm: 768px;
   --container-mb: 567px;
+  /* Scale for img and certificate */
+  --scale--ratio: 0;
 }
 /* Default Selectors */
 .application {
@@ -110,4 +112,13 @@
   display: flex;
   align-items: baseline;
   padding: 50px 0;
+}
+.cv__flex {
+  display: flex;
+  justify-content: center;
+}
+/* Btn */
+.default__btn {
+  border: none;
+  background: transparent;
 }
