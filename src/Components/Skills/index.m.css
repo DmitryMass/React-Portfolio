@@ -14,3 +14,9 @@
   text-shadow: 0 0 4px var(--white);
   padding-bottom: 25px;
 }
+
+@media screen and (max-width: 567px) {
+  .main {
+    padding: 30px 0;
+  }
+}

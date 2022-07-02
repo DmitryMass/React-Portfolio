@@ -6,7 +6,6 @@ import GitnLinkedin from '../GitnLinkedin/component';
 
 import stylesMenu from './index.m.css';
 import styles from '../index.m.css';
-import BurgerBtn from '../BurgerBtn/component';
 
 const Menu = ({
   header,

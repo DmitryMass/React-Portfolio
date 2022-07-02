@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ROUTES } from '../../Constant/component';
 
 import photo from '../../../Assets/Images/MyPhoto.png';
 import tag from '../../../Assets/Icons/codes.svg';
@@ -12,7 +10,7 @@ const Main = () => {
   return (
     <>
       <section className={styles.section}>
-        <div className="container flex__wrap">
+        <div className={`container flex__wrap ${styles.section__main}`}>
           <div className={styles.section__about}>
             <p className={styles.section__name}>Dmitry Moskalenko</p>
             <h1 className={styles.section__title}>Front End Developer</h1>

@@ -21,3 +21,10 @@
 .footer__designed {
   color: var(--white);
 }
+
+@media screen and (max-width: 567px) {
+  .footer__designed {
+    margin-left: -86px;
+    margin-bottom: 10px;
+  }
+}
