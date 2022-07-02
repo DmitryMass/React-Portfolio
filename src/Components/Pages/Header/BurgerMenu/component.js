@@ -7,6 +7,8 @@ import GitnLinkedin from '../GitnLinkedin/component';
 import stylesMenu from './index.m.css';
 import styles from '../index.m.css';
 
+import PropTypes from 'prop-types';
+
 const Menu = ({
   header,
   linkStyle,
@@ -54,6 +56,15 @@ const Menu = ({
       </div>
     </div>
   );
+};
+
+Menu.propTypes = {
+  header: PropTypes.object.isRequired,
+  linkStyle: PropTypes.string.isRequired,
+  gitHub: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired,
+  menuActive: PropTypes.bool.isRequired,
+  setMenuActive: PropTypes.func.isRequired,
 };
 
 export default Menu;

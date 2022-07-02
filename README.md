@@ -12,3 +12,4 @@ In cv-website used:
 2.  useRef- for scrolls (Contact/FooterLogo)
 3.  Css-Modules / BEM.
 4.  Webpack/babel
+5.  PropTypes for validation props

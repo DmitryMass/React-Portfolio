@@ -12,6 +12,8 @@ import linkedin from '../../../Assets/Icons/linkedin.svg';
 import styles from './index.m.css';
 import Menu from './BurgerMenu/component';
 import BurgerBtn from './BurgerBtn/component';
+//
+import PropTypes from 'prop-types';
 
 const Header = ({ handleClick, scrolls }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -61,5 +63,10 @@ const Header = ({ handleClick, scrolls }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  scrolls: PropTypes.object.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 export default Header;

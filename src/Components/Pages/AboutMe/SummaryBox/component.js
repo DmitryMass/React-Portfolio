@@ -7,10 +7,11 @@ const SummaryBox = () => {
     <div className={styles.main__summary}>
       <Title children="Summary" classStyle={styles.main__mySkill} />
       <p className={styles.main__skill}>
-        I'm looking for a full-time job as a Trainee/Junior Front End Developer.
-        I have non-commercial expirience in creating websites. Technologies
-        used: HTML, CSS(SCSS), JavaScript. Basic: React, NodeJs(Fastify). I
-        would like to invite you to review some projects in my portfolio:
+        I'm looking for a full-time/part-time or remote job as a Trainee/Junior
+        Front End Developer. I have non-commercial experience in creating
+        websites. Technologies used: HTML, CSS(SCSS), JavaScript. Basic: React,
+        NodeJs(Fastify). I would like to invite you to review some projects in
+        my portfolio:
       </p>
       <a
         className={styles.main__project}

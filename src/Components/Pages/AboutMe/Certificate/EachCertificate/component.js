@@ -1,5 +1,6 @@
 import React, { Children } from 'react';
 import styles from '../index.m.css';
+import PropTypes from 'prop-types';
 
 const EachCertificate = ({ children, link, imgClass, src, onImgClick }) => {
   return (
@@ -15,6 +16,14 @@ const EachCertificate = ({ children, link, imgClass, src, onImgClick }) => {
       </a>
     </div>
   );
+};
+
+EachCertificate.propTypes = {
+  children: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  imgClass: PropTypes.string.isRequired,
+  onImgClick: PropTypes.func.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 export default EachCertificate;

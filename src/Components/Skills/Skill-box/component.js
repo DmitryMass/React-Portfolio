@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './index.m.css';
+import PropTypes from 'prop-types';
 
 const Skill = ({ children, svgIcon }) => {
   return (
@@ -10,6 +11,11 @@ const Skill = ({ children, svgIcon }) => {
       </div>
     </div>
   );
+};
+
+Skill.propTypes = {
+  children: PropTypes.string.isRequired,
+  svgIcon: PropTypes.string.isRequired,
 };
 
 export default Skill;

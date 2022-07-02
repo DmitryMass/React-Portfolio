@@ -14,6 +14,8 @@ import styles from './index.m.css';
 import Skill from './Skill-box/component';
 import Btn from '../Button/component';
 
+import PropTypes from 'prop-types';
+
 const Skills = ({ btnStyle, linkStyle }) => {
   return (
     <main className={styles.main}>
@@ -35,6 +37,11 @@ const Skills = ({ btnStyle, linkStyle }) => {
       </div>
     </main>
   );
+};
+
+Skills.propTypes = {
+  btnStyle: PropTypes.string.isRequired,
+  linkStyle: PropTypes.string.isRequired,
 };
 
 export default Skills;

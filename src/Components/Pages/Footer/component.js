@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 //
 import styles from './index.m.css';
 import Logo from '../../Logo/component';
+import PropTypes from 'prop-types';
 
 const Footer = ({ scrolls, handleLogoClick }) => {
   return (
@@ -29,6 +30,11 @@ const Footer = ({ scrolls, handleLogoClick }) => {
       </div>
     </footer>
   );
+};
+
+Footer.propTypes = {
+  scrolls: PropTypes.object.isRequired,
+  handleLogoClick: PropTypes.func.isRequired,
 };
 
 export default Footer;

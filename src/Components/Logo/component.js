@@ -4,6 +4,8 @@ import { ROUTES } from '../Constant/component';
 import styles from './index.m.css';
 import tagLogo from '../../Assets/Icons/tags.svg';
 
+import PropTypes from 'prop-types';
+
 const Logo = ({ handleLogoClick }) => {
   return (
     <div className="header__logo">
@@ -15,4 +17,7 @@ const Logo = ({ handleLogoClick }) => {
   );
 };
 
+Logo.propTypes = {
+  handleLogoClick: PropTypes.func,
+};
 export default Logo;

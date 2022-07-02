@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const GitnLinkedin = ({ linkStyle, gitHub, linkedin }) => {
   return (
@@ -19,6 +20,12 @@ const GitnLinkedin = ({ linkStyle, gitHub, linkedin }) => {
       </a>
     </div>
   );
+};
+
+GitnLinkedin.propTypes = {
+  linkStyle: PropTypes.string.isRequired,
+  gitHub: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired,
 };
 
 export default GitnLinkedin;
