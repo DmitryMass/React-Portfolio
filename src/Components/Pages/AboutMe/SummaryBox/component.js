@@ -17,28 +17,28 @@ const SummaryBox = () => {
         href="https://github.com/DmitryMass/Weather-App"
         target="blank"
       >
-        https://github.com/DmitryMass/Weather-App
+        Weather-App
       </a>
       <a
         className={styles.main__project}
         href="https://github.com/DmitryMass/projectAnalytics"
         target="blank"
       >
-        https://github.com/DmitryMass/projectAnalytics
+        Project Analytics
       </a>
       <a
         className={styles.main__project}
         href="https://github.com/DmitryMass/Server-For-Store/tree/master/server"
         target="blank"
       >
-        https://github.com/DmitryMass/Server-For-Store/tree/master/server
+        Server for Store
       </a>
       <a
         className={styles.main__project}
         href=" https://github.com/DmitryMass/Air-Alert-Map"
         target="blank"
       >
-        https://github.com/DmitryMass/Air-Alert-Map
+        Air-Alert-Map
       </a>
       <div className={styles.main__skill}>
         And other in my profile on GitHub :

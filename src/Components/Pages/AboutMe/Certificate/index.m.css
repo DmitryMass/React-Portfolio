@@ -19,12 +19,12 @@
 .fe__basic_img,
 .fe__pro_img {
   cursor: zoom-in;
-  max-width: 550px;
+  max-width: 60%;
   transition: all 0.2s;
 }
 .fe__basic_active,
 .fe__pro_active {
-  transform: scale(1);
+  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   max-width: 100%;
   cursor: zoom-out;

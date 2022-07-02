@@ -15,13 +15,17 @@ const Certificate = () => {
         src={basic}
         imgClass={transform ? styles.fe__basic_active : styles.fe__basic_img}
         onImgClick={() => setTransform(!transform)}
-      />
+      >
+        Front End Basic (Certificate)
+      </EachCertificate>
       <EachCertificate
         link="https://certificate.ithillel.ua/ru/view/86466421"
         src={fePro}
         imgClass={feProTransform ? styles.fe__pro_active : styles.fe__pro_img}
         onImgClick={() => setFeProTransform(!feProTransform)}
-      />
+      >
+        Front End Advanced (Certificate)
+      </EachCertificate>
     </div>
   );
 };

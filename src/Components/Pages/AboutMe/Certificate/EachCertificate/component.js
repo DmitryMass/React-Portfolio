@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Children } from 'react';
 import styles from '../index.m.css';
 
-const EachCertificate = ({ link, imgClass, src, onImgClick }) => {
+const EachCertificate = ({ children, link, imgClass, src, onImgClick }) => {
   return (
     <div className={styles.fe__basic}>
       <img
@@ -11,7 +11,7 @@ const EachCertificate = ({ link, imgClass, src, onImgClick }) => {
         onClick={onImgClick}
       />
       <a href={link} target="blank">
-        {link}
+        {children}
       </a>
     </div>
   );

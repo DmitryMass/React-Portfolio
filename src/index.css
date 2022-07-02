@@ -101,15 +101,6 @@
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 567px) {
-  .flex__wrap {
-    align-items: inherit;
-  }
-  .flex__wrap-wrap {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-}
 
 .footer__flex {
   display: flex;
@@ -123,6 +114,20 @@
 .cv__flex {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 567px) {
+  .flex__wrap {
+    align-items: inherit;
+  }
+  .flex__wrap-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .cv__flex {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 /* Grid */
