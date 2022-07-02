@@ -122,3 +122,49 @@
   border: none;
   background: transparent;
 }
+
+/* Burger Menu Btn */
+
+.burger__btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  /* Burger menu (HEADER NAVIGATION) */
+  .burger__btn {
+    display: flex;
+  }
+  .header__gitHub {
+    display: none;
+  }
+  .header__list {
+    display: none;
+  }
+}
+
+.burger__btn::after {
+  content: '';
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  background: var(--white);
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+.burger__btn::before {
+  content: '';
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  background: var(--white);
+  transform: translateY(6px);
+  transition: all 0.3s ease;
+}

@@ -15,4 +15,5 @@
   line-height: var(--lh-md);
   color: var(--coral);
   margin-top: 2px;
+  font-style: italic;
 }
