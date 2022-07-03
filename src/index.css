@@ -116,6 +116,11 @@
   display: flex;
   justify-content: center;
 }
+.slider__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media screen and (max-width: 567px) {
   .flex__wrap {

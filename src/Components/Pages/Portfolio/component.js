@@ -8,6 +8,8 @@ import todo from '../../../Assets/Images/CRUDTodo.png';
 import clock from '../../../Assets/Images/clocks.png';
 import weather from '../../../Assets/Images/weather.png';
 import myPortfolio from '../../../Assets/Images/portfolio.png';
+import arrowLeft from '../../../Assets/Icons/arrow-left.svg';
+import arrowRight from '../../../Assets/Icons/arrow-right.svg';
 
 const Portfolio = () => {
   const [slideTransform, setSlideTransform] = useState(0);
@@ -77,13 +79,21 @@ const Portfolio = () => {
             </Slide>
           </div>
         </div>
-        <div className="slide__navigation">
-          <button onClick={prevSlide} type="button">
-            Prev
-          </button>
-          <button onClick={nextSlide} type="button">
-            Next
-          </button>
+        <div className={`${styles.slide__navigation} slider__flex `}>
+          <a className={styles.slide__prev} onClick={prevSlide} type="button">
+            <object
+              className={styles.slide__arrow}
+              data={arrowLeft}
+              type=""
+            ></object>
+          </a>
+          <a className={styles.slide__next} onClick={nextSlide} type="button">
+            <object
+              className={styles.slide__arrow}
+              data={arrowRight}
+              type=""
+            ></object>
+          </a>
         </div>
       </div>
     </article>
