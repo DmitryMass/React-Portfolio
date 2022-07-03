@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../index.m.css';
+import PropTypes from 'prop-types';
 
 const Slide = ({ children, link, description, img }) => {
   return (
@@ -15,6 +16,13 @@ const Slide = ({ children, link, description, img }) => {
       </div>
     </div>
   );
+};
+
+Slide.propTypes = {
+  children: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
 
 export default Slide;
