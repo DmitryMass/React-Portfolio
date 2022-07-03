@@ -51,6 +51,7 @@
 /* Default Selectors */
 .application {
   min-height: calc(100vh - 200px);
+  background: var(--blue-neutral);
 }
 
 .container {
@@ -191,4 +192,22 @@
   background: var(--white);
   transform: translateY(6px);
   transition: all 0.3s ease;
+}
+
+/* ANT Restyle */
+
+.ant-carousel .slick-dots li,
+.ant-carousel .slick-dots li button {
+  width: 20px;
+  height: 5px;
+  background: var(--dark-blue);
+  border-radius: 4px;
+}
+
+.ant-carousel .slick-dots li.slick-active,
+.ant-carousel .slick-dots li.slick-active button {
+  width: 20px;
+  height: 5px;
+  background: var(--coral);
+  border-radius: 4px;
 }

@@ -10,7 +10,8 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
+  devtool: 'source-map',
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
