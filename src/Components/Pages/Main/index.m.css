@@ -119,6 +119,7 @@
   }
   .section__title {
     font-size: var(--fs-the-mdest);
+    line-height: var(--lh-md);
   }
   .section__info {
     font-size: var(--fs-sm);
