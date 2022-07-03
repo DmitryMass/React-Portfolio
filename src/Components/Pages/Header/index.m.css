@@ -2,6 +2,7 @@
   padding: 10px 0px;
   padding-top: 16px;
   background: var(--blue-neutral);
+  border-bottom: 1px solid var(--white-transparent);
 }
 
 .header__link {
@@ -11,6 +12,7 @@
   font-size: var(--fs-smaller);
   line-height: var(--lh-sm);
   font-weight: var(--fw-normal);
+  display: inline-block;
 }
 
 .header__link:hover,

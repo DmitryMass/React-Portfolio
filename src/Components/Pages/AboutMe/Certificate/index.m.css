@@ -14,6 +14,8 @@
   padding-top: 15px;
   font-size: var(--fs-md);
   text-align: center;
+  color: var(--white);
+  text-decoration: underline;
 }
 
 .fe__basic_img,

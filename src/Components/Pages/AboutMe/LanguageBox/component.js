@@ -9,7 +9,7 @@ const LanguageBox = () => {
         children="Additional information:"
         classStyle={styles.main__mySkill}
       />
-      <p>English - Pre-Intermediate (A2)</p>
+      <p className={styles.main__skill}>English - Pre-Intermediate (A2)</p>
     </div>
   );
 };

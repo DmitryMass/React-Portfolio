@@ -3,13 +3,14 @@
 
 :root {
   /* Colors && Bgc */
-  --color: blue;
+  --blue: rgb(78, 78, 231);
   --black: #000000;
   --white: #ffffff;
   --dark-blue: #171836;
   --blue-neutral: #181a54;
   --coral: #f5443b;
   --blue-bgc: #4b5b87;
+  --white-transparent: #ffffff6b;
   /*  */
   --linear-blue: linear-gradient(
     180deg,
@@ -51,9 +52,12 @@
 /* Default Selectors */
 .application {
   min-height: calc(100vh - 200px);
-  background: var(--blue-neutral);
+  background: #172755;
 }
-
+.application__blue {
+  background: var(--blue-neutral);
+  min-height: calc(100vh - 200px);
+}
 .container {
   max-width: 1200px;
   padding: 0 15px;

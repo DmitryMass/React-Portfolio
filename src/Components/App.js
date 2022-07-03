@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 //
@@ -10,6 +10,8 @@ import Portfolio from './Pages/Portfolio/component';
 import Footer from './Pages/Footer/component';
 
 const App = () => {
+  const [bgc, setBgc] = useState(true);
+
   const ref = useRef(null);
   const logoRef = useRef(null);
 
@@ -21,8 +23,10 @@ const App = () => {
   };
   return (
     <>
-      <div className="application">
+      <div className={bgc ? 'application' : 'application__blue'}>
         <Header
+          bgc={bgc}
+          setBgc={setBgc}
           scrolls={logoRef}
           handleClick={handleClick}
           handleLogoClick={handleLogoClick}
