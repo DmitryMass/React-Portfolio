@@ -8,6 +8,7 @@ import todo from '../../../Assets/Images/CRUDTodo.png';
 import clock from '../../../Assets/Images/clocks.png';
 import weather from '../../../Assets/Images/weather.png';
 import myPortfolio from '../../../Assets/Images/portfolio.png';
+import todoReact from '../../../Assets/Images/crud-todo-react.png';
 import arrowLeft from '../../../Assets/Icons/arrow-left.svg';
 import arrowRight from '../../../Assets/Icons/arrow-right.svg';
 
@@ -16,8 +17,8 @@ const Portfolio = () => {
 
   const nextSlide = () => {
     setSlideTransform((prev) => {
-      prev += 20;
-      if (prev > 80) {
+      prev += 16.6;
+      if (prev > 83) {
         prev = 0;
       }
       return prev;
@@ -26,9 +27,9 @@ const Portfolio = () => {
 
   const prevSlide = () => {
     setSlideTransform((prev) => {
-      prev -= 20;
+      prev -= 16.6;
       if (prev < 0) {
-        prev = 80;
+        prev = 83;
       }
       return prev;
     });
@@ -46,6 +47,13 @@ const Portfolio = () => {
               link="https://github.com/DmitryMass/projectAnalytics"
               img={analytics}
               description="Analytics Website (1 page) HTML/SCSS/JavaScript"
+            >
+              Link
+            </Slide>
+            <Slide
+              link="https://github.com/DmitryMass/CRUD_TodoList_React"
+              img={todoReact}
+              description="CRUD Todo List with MockApi (React / React Hooks ) "
             >
               Link
             </Slide>
