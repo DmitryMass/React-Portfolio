@@ -22,6 +22,13 @@ const SummaryBox = () => {
       </a>
       <a
         className={styles.main__project}
+        href="https://github.com/DmitryMass/CRUD_TodoList_React"
+        target="blank"
+      >
+        CRUD TodoList with MockApi (React / React Hooks)
+      </a>
+      <a
+        className={styles.main__project}
         href="https://github.com/DmitryMass/Weather-App"
         target="blank"
       >
