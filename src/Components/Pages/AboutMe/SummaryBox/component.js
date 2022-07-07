@@ -15,6 +15,14 @@ const SummaryBox = () => {
       </p>
       <a
         className={styles.main__project}
+        href="https://github.com/DmitryMass/ContactList_Redux_ReduxThunk"
+        target="blank"
+      >
+        CRUD Contacts (React-Redux / Redux-Thunk / Formik(Yup) etc..) <br />
+        MockApi Server
+      </a>
+      <a
+        className={styles.main__project}
         href="https://github.com/DmitryMass/CRUD_Todo_JavaScript"
         target="blank"
       >
@@ -40,13 +48,6 @@ const SummaryBox = () => {
         target="blank"
       >
         Project Analytics
-      </a>
-      <a
-        className={styles.main__project}
-        href="https://github.com/DmitryMass/Server-For-Store/tree/master/server"
-        target="blank"
-      >
-        Server for Store
       </a>
       <a
         className={styles.main__project}

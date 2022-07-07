@@ -8,6 +8,7 @@ import todo from '../../../Assets/Images/CRUDTodo.png';
 import clock from '../../../Assets/Images/clocks.png';
 import weather from '../../../Assets/Images/weather.png';
 import myPortfolio from '../../../Assets/Images/portfolio.png';
+import contacts from '../../../Assets/Images/contacts.png';
 import todoReact from '../../../Assets/Images/crud-todo-react.png';
 import arrowLeft from '../../../Assets/Icons/arrow-left.svg';
 import arrowRight from '../../../Assets/Icons/arrow-right.svg';
@@ -17,8 +18,8 @@ const Portfolio = () => {
 
   const nextSlide = () => {
     setSlideTransform((prev) => {
-      prev += 16.6;
-      if (prev > 83) {
+      prev += 14.28;
+      if (prev > 85.7) {
         prev = 0;
       }
       return prev;
@@ -27,9 +28,9 @@ const Portfolio = () => {
 
   const prevSlide = () => {
     setSlideTransform((prev) => {
-      prev -= 16.6;
+      prev -= 14.28;
       if (prev < 0) {
-        prev = 83;
+        prev = 85.7;
       }
       return prev;
     });
@@ -43,6 +44,13 @@ const Portfolio = () => {
             className={styles.slide__inner}
             style={{ transform: `translateX(-${slideTransform}%)` }}
           >
+            <Slide
+              link="https://github.com/DmitryMass/ContactList_Redux_ReduxThunk"
+              img={contacts}
+              description="CRUD Contacts (React-Redux / Redux-Thunk / Formik(Yup) etc..)"
+            >
+              Link
+            </Slide>
             <Slide
               link="https://github.com/DmitryMass/projectAnalytics"
               img={analytics}

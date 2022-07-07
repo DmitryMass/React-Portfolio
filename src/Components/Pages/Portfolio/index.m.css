@@ -10,7 +10,7 @@
 .slide__inner {
   display: flex;
   transition: 0.5s all;
-  width: 600%;
+  width: 700%;
 }
 .slide__menu {
   padding: 60px 0;
