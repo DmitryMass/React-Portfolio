@@ -10,8 +10,6 @@ import Portfolio from './Pages/Portfolio/component';
 import Footer from './Pages/Footer/component';
 
 const App = () => {
-  const [bgc, setBgc] = useState(true);
-
   const ref = useRef(null);
   const logoRef = useRef(null);
 
@@ -23,10 +21,8 @@ const App = () => {
   };
   return (
     <>
-      <div className={bgc ? 'application' : 'application__blue'}>
+      <div className="application">
         <Header
-          bgc={bgc}
-          setBgc={setBgc}
           scrolls={logoRef}
           handleClick={handleClick}
           handleLogoClick={handleLogoClick}

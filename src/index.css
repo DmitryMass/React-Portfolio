@@ -51,13 +51,10 @@
 }
 /* Default Selectors */
 .application {
-  min-height: calc(100vh - 200px);
-  background: #172755;
-}
-.application__blue {
   background: var(--blue-neutral);
   min-height: calc(100vh - 200px);
 }
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
