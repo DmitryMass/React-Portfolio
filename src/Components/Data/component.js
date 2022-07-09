@@ -19,6 +19,21 @@ export const headerLink = [
   },
 ];
 
+export const headerLinkUa = [
+  {
+    title: 'Головна',
+    link: ROUTES.HOME,
+  },
+  {
+    title: 'Про мене',
+    link: ROUTES.ABOUT,
+  },
+  {
+    title: 'Портфоліо',
+    link: ROUTES.PORTFOLIO,
+  },
+];
+
 export const contactList = [
   {
     title: 'dimamikron41@gmail.com',

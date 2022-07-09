@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 //
@@ -8,17 +8,11 @@ import Main from './Pages/Main/component';
 import About from './Pages/AboutMe/component';
 import Portfolio from './Pages/Portfolio/component';
 import Footer from './Pages/Footer/component';
+import { useScrollRef } from './RefScroll/RefScroll';
 
 const App = () => {
-  const ref = useRef(null);
-  const logoRef = useRef(null);
+  const { ref, logoRef, handleClick, handleLogoClick } = useScrollRef();
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-  const handleLogoClick = () => {
-    logoRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
   return (
     <>
       <div className="application">

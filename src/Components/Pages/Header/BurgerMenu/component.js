@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { headerLink } from '../../../Data/component';
 import GitnLinkedin from '../GitnLinkedin/component';
 
-import stylesMenu from './index.m.css';
 import styles from '../index.m.css';
+import stylesMenu from './index.m.css';
 
 import PropTypes from 'prop-types';
+import { LANG_EN, useLang } from '../../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../../LangContext/LangNoteBook';
 
 const Menu = ({
   header,
@@ -17,6 +22,7 @@ const Menu = ({
   menuActive,
   setMenuActive,
 }) => {
+  const { lang } = useLang();
   return (
     <div
       className={
@@ -34,19 +40,33 @@ const Menu = ({
           {header}
         </div>
         <ul className={stylesMenu.menu__list}>
-          {headerLink.map((item) => {
-            return (
-              <li key={nanoid()} className={stylesMenu.menu__link}>
-                <Link
-                  onClick={() => setMenuActive(!menuActive)}
-                  to={item.link}
-                  className={`${styles.header__link} ${stylesMenu.menu__href}`}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            );
-          })}
+          {lang === LANG_EN
+            ? dictionaryEnglish.headerLink.map((item) => {
+                return (
+                  <li key={nanoid()} className={stylesMenu.menu__link}>
+                    <Link
+                      onClick={() => setMenuActive(!menuActive)}
+                      to={item.link}
+                      className={`${styles.header__link} ${stylesMenu.menu__href}`}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              })
+            : dictionaryUkrainian.headerLink.map((item) => {
+                return (
+                  <li key={nanoid()} className={stylesMenu.menu__link}>
+                    <Link
+                      onClick={() => setMenuActive(!menuActive)}
+                      to={item.link}
+                      className={`${styles.header__link} ${stylesMenu.menu__href}`}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              })}
         </ul>
         <GitnLinkedin
           linkStyle={linkStyle}

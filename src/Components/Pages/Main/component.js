@@ -5,22 +5,39 @@ import tag from '../../../Assets/Icons/codes.svg';
 import styles from './index.m.css';
 import Skills from '../../Skills/component';
 import Btn from '../../Button/component';
+import { LANG_EN, useLang } from '../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../LangContext/LangNoteBook';
 
 const Main = () => {
+  const { lang } = useLang();
   return (
     <>
       <section className={styles.section}>
         <div className={`container flex__wrap ${styles.section__main}`}>
           <div className={styles.section__about}>
-            <p className={styles.section__name}>Dmitry Moskalenko</p>
+            <p className={styles.section__name}>
+              {lang === LANG_EN
+                ? dictionaryEnglish.myName
+                : dictionaryUkrainian.myName}
+            </p>
             <h1 className={styles.section__title}>Front End Developer</h1>
             <p className={styles.section__info}>
-              Hi there, I'm a Ukraine based front end developer
-              (JavaScript/React) focused on crafting clean && user friendly
-              experiences.
+              {lang === LANG_EN
+                ? dictionaryEnglish.preview
+                : dictionaryUkrainian.preview}
             </p>
             <div className={styles.section__href}>
-              <Btn children="About me" link={styles.section__link} />
+              <Btn
+                children={
+                  lang === LANG_EN
+                    ? dictionaryEnglish.aboutBtn
+                    : dictionaryUkrainian.aboutBtn
+                }
+                link={styles.section__link}
+              />
               <div className={styles.section__tag}>
                 <img className={styles.section__tag_first} src={tag} alt="" />
                 <img className={styles.section__tag_second} src={tag} alt="" />

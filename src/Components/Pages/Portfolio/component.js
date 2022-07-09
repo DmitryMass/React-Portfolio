@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slide from './Slide/component';
+import useTranformSlide from './Slide/Transform/component';
 
 import styles from './index.m.css';
 
@@ -12,29 +13,15 @@ import contacts from '../../../Assets/Images/contacts.png';
 import todoReact from '../../../Assets/Images/crud-todo-react.png';
 import arrowLeft from '../../../Assets/Icons/arrow-left.svg';
 import arrowRight from '../../../Assets/Icons/arrow-right.svg';
+import { LANG_EN, useLang } from '../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../LangContext/LangNoteBook';
 
 const Portfolio = () => {
-  const [slideTransform, setSlideTransform] = useState(0);
-
-  const nextSlide = () => {
-    setSlideTransform((prev) => {
-      prev += 14.28;
-      if (prev > 85.7) {
-        prev = 0;
-      }
-      return prev;
-    });
-  };
-
-  const prevSlide = () => {
-    setSlideTransform((prev) => {
-      prev -= 14.28;
-      if (prev < 0) {
-        prev = 85.7;
-      }
-      return prev;
-    });
-  };
+  const { slideTransform, nextSlide, prevSlide } = useTranformSlide();
+  const { lang } = useLang();
 
   return (
     <article className={styles.slide__menu}>
@@ -47,51 +34,93 @@ const Portfolio = () => {
             <Slide
               link="https://github.com/DmitryMass/ContactList_Redux_ReduxThunk"
               img={contacts}
-              description="CRUD Contacts (React-Redux / Redux-Thunk / Formik(Yup) etc..)"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.crudContacts
+                  : dictionaryUkrainian.crudContacts
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               link="https://github.com/DmitryMass/projectAnalytics"
               img={analytics}
-              description="Analytics Website (1 page) HTML/SCSS/JavaScript"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.analytics
+                  : dictionaryUkrainian.analytics
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               link="https://github.com/DmitryMass/CRUD_TodoList_React"
               img={todoReact}
-              description="CRUD Todo List with MockApi (React / React Hooks ) "
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.reactTodo
+                  : dictionaryUkrainian.reactTodo
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               link="https://github.com/DmitryMass/CRUD_Todo_JavaScript"
               img={todo}
-              description="CRUD Todo List with MockApi (JavaScript)"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.jsTodo
+                  : dictionaryUkrainian.jsTodo
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               img={clock}
               link="https://github.com/DmitryMass/Clock-and-StopWatch"
-              description="Clock and Stopwatch (JavaScript)"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.clock
+                  : dictionaryUkrainian.clock
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               img={weather}
               link="https://github.com/DmitryMass/Weather-App"
-              description="Weather App (Api openWeather) JavaScript"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.weather
+                  : dictionaryUkrainian.weather
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
             <Slide
               img={myPortfolio}
               link="https://github.com/DmitryMass/React-Portfolio"
-              description="Portfolio (ReactJs/Hooks/Router/ModuleCSS) + Webpack/Babel"
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.myPortfolio
+                  : dictionaryUkrainian.myPortfolio
+              }
             >
-              Link
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
             </Slide>
           </div>
         </div>

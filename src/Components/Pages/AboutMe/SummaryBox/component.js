@@ -1,17 +1,29 @@
 import React from 'react';
+import { LANG_EN, useLang } from '../../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../../LangContext/LangNoteBook';
 import Title from '../AboutBox/component';
 import styles from '../index.m.css';
 
 const SummaryBox = () => {
+  const { lang } = useLang();
+
   return (
     <div className={styles.main__summary}>
-      <Title children="Summary" classStyle={styles.main__mySkill} />
+      <Title
+        children={
+          lang === LANG_EN
+            ? dictionaryEnglish.summaryTitle
+            : dictionaryUkrainian.summaryTitle
+        }
+        classStyle={styles.main__mySkill}
+      />
       <p className={styles.main__skill}>
-        I'm looking for a full-time/part-time or remote job as a Trainee/Junior
-        Front End Developer. I have non-commercial experience in creating
-        websites. Technologies used: HTML, CSS(SCSS), JavaScript. Basic: React,
-        NodeJs(Fastify). I would like to invite you to review some projects in
-        my portfolio:
+        {lang === LANG_EN
+          ? dictionaryEnglish.summary
+          : dictionaryUkrainian.summary}
       </p>
       <a
         className={styles.main__project}
@@ -57,7 +69,7 @@ const SummaryBox = () => {
         Air-Alert-Map
       </a>
       <div className={styles.main__skill}>
-        And other in my profile on GitHub :
+        {lang === LANG_EN ? dictionaryEnglish.myGit : dictionaryUkrainian.myGit}
         <a
           className={styles.main__project}
           href=" https://github.com/DmitryMass"

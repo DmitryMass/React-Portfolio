@@ -3,8 +3,14 @@ import styles from './index.m.css';
 import basic from '../../../../Assets/Images/fe-basic.png';
 import fePro from '../../../../Assets/Images/fe-pro.png';
 import EachCertificate from './EachCertificate/component';
+import { LANG_EN, useLang } from '../../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../../LangContext/LangNoteBook';
 
 const Certificate = () => {
+  const { lang } = useLang();
   const [feProTransform, setFeProTransform] = useState(false);
   const [transform, setTransform] = useState(false);
 
@@ -16,7 +22,9 @@ const Certificate = () => {
         imgClass={transform ? styles.fe__basic_active : styles.fe__basic_img}
         onImgClick={() => setTransform(!transform)}
       >
-        Front End Basic (Certificate)
+        {lang === LANG_EN
+          ? dictionaryEnglish.basicCertificate
+          : dictionaryUkrainian.basicCertificate}
       </EachCertificate>
       <EachCertificate
         link="https://certificate.ithillel.ua/ru/view/86466421"
@@ -24,7 +32,9 @@ const Certificate = () => {
         imgClass={feProTransform ? styles.fe__pro_active : styles.fe__pro_img}
         onImgClick={() => setFeProTransform(!feProTransform)}
       >
-        Front End Advanced (Certificate)
+        {lang === LANG_EN
+          ? dictionaryEnglish.advancedCertificate
+          : dictionaryUkrainian.advancedCertificate}
       </EachCertificate>
     </div>
   );

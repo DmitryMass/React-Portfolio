@@ -5,9 +5,12 @@ import App from './Components/App';
 import './styles/reset.css';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
+import { LanguageContext } from './Components/LangContext';
 
 ReactDOM.createRoot(document.querySelector('#app')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <LanguageContext>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </LanguageContext>
 );

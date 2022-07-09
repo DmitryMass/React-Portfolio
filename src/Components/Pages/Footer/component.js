@@ -5,8 +5,14 @@ import { nanoid } from 'nanoid';
 import styles from './index.m.css';
 import Logo from '../../Logo/component';
 import PropTypes from 'prop-types';
+import { LANG_EN, useLang } from '../../LangContext';
+import {
+  dictionaryEnglish,
+  dictionaryUkrainian,
+} from '../../LangContext/LangNoteBook';
 
 const Footer = ({ scrolls, handleLogoClick }) => {
+  const { lang } = useLang();
   return (
     <footer ref={scrolls} className={styles.footer}>
       <div className="container flex__wrap-wrap">
@@ -24,8 +30,13 @@ const Footer = ({ scrolls, handleLogoClick }) => {
           })}
         </ul>
         <div className={styles.footer__designed}>
-          Designed by
-          <Logo handleLogoClick={handleLogoClick} />
+          {lang === LANG_EN
+            ? dictionaryEnglish.disignedBy
+            : dictionaryUkrainian.disignedBy}
+          <Logo
+            handleLogoClick={handleLogoClick}
+            logoStyle={styles.footer__logo}
+          />
         </div>
       </div>
     </footer>

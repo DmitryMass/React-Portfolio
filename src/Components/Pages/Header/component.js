@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 //
-import { headerLink } from '../../Data/component';
 import GitnLinkedin from './GitnLinkedin/component';
+import Menu from './BurgerMenu/component';
 import Logo from '../../Logo/component';
+import BurgerBtn from './BurgerBtn/component';
+import NavList from './NavList/component';
 //
-import { nanoid } from 'nanoid';
 import github from '../../../Assets/Icons/github.svg';
 import linkedin from '../../../Assets/Icons/linkedin.svg';
 //
 import styles from './index.m.css';
-import Menu from './BurgerMenu/component';
-import BurgerBtn from './BurgerBtn/component';
 //
 import PropTypes from 'prop-types';
+import LangBtn from '../../LangContext/ChangeBtn';
 
 const Header = ({ handleClick, scrolls }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -21,28 +20,12 @@ const Header = ({ handleClick, scrolls }) => {
   return (
     <header ref={scrolls} className={styles.header}>
       <div className="container header__flex">
-        <Logo />
+        <Logo logoStyle={styles.header__logo} />
         <nav>
-          <ul className="flex__container header__list">
-            {headerLink.map((item) => {
-              return (
-                <li key={nanoid()}>
-                  <Link to={item.link} className={styles.header__link}>
-                    {item.title}
-                  </Link>
-                </li>
-              );
-            })}
-            <li>
-              <button
-                onClick={handleClick}
-                className={`default__btn ${styles.header__link}`}
-                type="button"
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
+          <NavList
+            ulStyles="flex__container header__list"
+            handleClick={handleClick}
+          />
           <BurgerBtn menuActive={menuActive} setMenuActive={setMenuActive} />
           <Menu
             menuActive={menuActive}
@@ -53,12 +36,15 @@ const Header = ({ handleClick, scrolls }) => {
             linkedin={linkedin}
           />
         </nav>
-        <div className="header__gitHub">
-          <GitnLinkedin
-            linkStyle={styles.header__network}
-            gitHub={github}
-            linkedin={linkedin}
-          />
+        <div className={styles.header__box}>
+          <div className="header__gitHub">
+            <GitnLinkedin
+              linkStyle={styles.header__network}
+              gitHub={github}
+              linkedin={linkedin}
+            />
+          </div>
+          <LangBtn />
         </div>
       </div>
     </header>

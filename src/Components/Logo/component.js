@@ -6,9 +6,9 @@ import tagLogo from '../../Assets/Icons/tags.svg';
 
 import PropTypes from 'prop-types';
 
-const Logo = ({ handleLogoClick }) => {
+const Logo = ({ handleLogoClick, logoStyle }) => {
   return (
-    <div className="header__logo">
+    <div className={logoStyle}>
       <Link onClick={handleLogoClick} to={ROUTES.HOME} className={styles.logo}>
         <object data={tagLogo} type=""></object>
         <span className={styles.jimmyCo}>Jimmy-Co</span>

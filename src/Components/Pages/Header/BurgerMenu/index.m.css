@@ -39,4 +39,5 @@
   font-weight: var(--fw-thin);
   line-height: var(--lh-hg);
   font-style: italic;
+  padding: 8px 0;
 }

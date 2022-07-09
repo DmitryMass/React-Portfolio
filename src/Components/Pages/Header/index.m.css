@@ -6,7 +6,7 @@
 }
 
 .header__link {
-  padding: 8px 12px;
+  padding: 8px 10px;
   position: relative;
   color: var(--white);
   font-size: var(--fs-smaller);
@@ -52,4 +52,19 @@
   z-index: -1;
   width: 25px;
   height: 25px;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__logo {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    display: none;
+  }
 }

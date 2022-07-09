@@ -21,7 +21,10 @@ const Slide = ({ children, link, description, img }) => {
 Slide.propTypes = {
   children: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.oneOfType([
+    PropTypes.object.isRequired,
+    PropTypes.string.isRequired,
+  ]),
   img: PropTypes.string.isRequired,
 };
 
