@@ -10,8 +10,7 @@
   color: var(--white);
   background: var(--coral);
 }
-.language__btn:hover,
-.language__btn:focus {
+.language__btn:hover {
   box-shadow: inset 0px 0px 4px var(--dark-blue);
 }
 

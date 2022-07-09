@@ -9,8 +9,9 @@ Contact - scroll to footer, to my contact
 
 In cv-website used:
 
-1.  UseState/Components
+1.  Components
 2.  useRef- for scrolls (Contact/FooterLogo)
+    useState / CustomHooks / Context For change lang.
 3.  Css-Modules / BEM.
 4.  Webpack/babel
 5.  PropTypes for validation props
