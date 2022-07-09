@@ -9,6 +9,9 @@
   height: 40px;
   color: var(--white);
   background: var(--coral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .language__btn:hover {
   box-shadow: inset 0px 0px 4px var(--dark-blue);
