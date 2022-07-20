@@ -27,6 +27,20 @@ const SummaryBox = () => {
       </p>
       <a
         className={styles.main__project}
+        href="https://github.com/DmitryMass/UI-Chat_Redux-Websocket"
+        target="blank"
+      >
+        Pixel Perfect Chat (React/Redux/WebSocket)
+      </a>
+      <a
+        className={styles.main__project}
+        href="https://github.com/DmitryMass/Rick_And_Morty_React-Redux"
+        target="blank"
+      >
+        Rick and Morty Fan Page (React/Redux)
+      </a>
+      <a
+        className={styles.main__project}
         href="https://github.com/DmitryMass/ContactList_Redux_ReduxThunk"
         target="blank"
       >
@@ -60,13 +74,6 @@ const SummaryBox = () => {
         target="blank"
       >
         Project Analytics
-      </a>
-      <a
-        className={styles.main__project}
-        href=" https://github.com/DmitryMass/Air-Alert-Map"
-        target="blank"
-      >
-        Air-Alert-Map
       </a>
       <div className={styles.main__skill}>
         {lang === LANG_EN ? dictionaryEnglish.myGit : dictionaryUkrainian.myGit}

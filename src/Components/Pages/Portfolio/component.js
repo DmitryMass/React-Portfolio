@@ -11,6 +11,9 @@ import weather from '../../../Assets/Images/weather.png';
 import myPortfolio from '../../../Assets/Images/portfolio.png';
 import contacts from '../../../Assets/Images/contacts.png';
 import todoReact from '../../../Assets/Images/crud-todo-react.png';
+import rickAndMorty from '../../../Assets/Images/ricknmorty.png';
+import uiChat from '../../../Assets/Images/uichat.png';
+
 import arrowLeft from '../../../Assets/Icons/arrow-left.svg';
 import arrowRight from '../../../Assets/Icons/arrow-right.svg';
 import { LANG_EN, useLang } from '../../LangContext';
@@ -31,6 +34,32 @@ const Portfolio = () => {
             className={styles.slide__inner}
             style={{ transform: `translateX(-${slideTransform}%)` }}
           >
+            <Slide
+              link="https://github.com/DmitryMass/Rick_And_Morty_React-Redux"
+              img={rickAndMorty}
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.rickMorty
+                  : dictionaryUkrainian.rickMorty
+              }
+            >
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
+            </Slide>
+            <Slide
+              link="https://github.com/DmitryMass/UI-Chat_Redux-Websocket"
+              img={uiChat}
+              description={
+                lang === LANG_EN
+                  ? dictionaryEnglish.uichat
+                  : dictionaryUkrainian.uichat
+              }
+            >
+              {lang === LANG_EN
+                ? dictionaryEnglish.portfolioLink
+                : dictionaryUkrainian.portfolioLink}
+            </Slide>
             <Slide
               link="https://github.com/DmitryMass/ContactList_Redux_ReduxThunk"
               img={contacts}

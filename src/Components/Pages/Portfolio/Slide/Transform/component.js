@@ -5,8 +5,8 @@ const useTranformSlide = () => {
 
   const nextSlide = () => {
     setSlideTransform((prev) => {
-      prev += 14.28;
-      if (prev > 85.7) {
+      prev += 11.11;
+      if (prev > 88.88) {
         prev = 0;
       }
       return prev;
@@ -15,9 +15,9 @@ const useTranformSlide = () => {
 
   const prevSlide = () => {
     setSlideTransform((prev) => {
-      prev -= 14.28;
+      prev -= 11.11;
       if (prev < 0) {
-        prev = 85.7;
+        prev = 88.88;
       }
       return prev;
     });

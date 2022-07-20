@@ -46,6 +46,8 @@ export const dictionaryEnglish = {
   clock: 'Clock and Stopwatch (JavaScript)',
   weather: 'Weather App (Api openWeather) JavaScript',
   myPortfolio: 'Portfolio (ReactJs/Hooks/Router/ModuleCSS) + Webpack/Babel',
+  rickMorty: 'Rick and Morty Fan Page (React/Redux)',
+  uichat: 'UI Chat (React/Redux/WebSocket)',
 };
 
 export const dictionaryUkrainian = {
@@ -96,4 +98,6 @@ export const dictionaryUkrainian = {
   clock: 'Годинник і секундомір (JavaScript)',
   weather: 'Програма погоди (Api openWeather) JavaScript',
   myPortfolio: 'Портфоліо (ReactJs/Hooks/Router/ModuleCSS) + Webpack/Babel',
+  rickMorty: 'Фан сторінка Рік та Морті (React/Redux)',
+  uichat: 'Чат (React/Redux/WebSocket)',
 };

@@ -2,6 +2,10 @@
   color: white;
   width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 .slide__wrapper {
   width: 100%;
@@ -10,7 +14,7 @@
 .slide__inner {
   display: flex;
   transition: 0.5s all;
-  width: 700%;
+  width: 900%;
 }
 .slide__menu {
   padding: 60px 0;
