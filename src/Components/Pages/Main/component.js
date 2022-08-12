@@ -5,39 +5,21 @@ import tag from '../../../Assets/Icons/codes.svg';
 import styles from './index.m.css';
 import Skills from '../../Skills/component';
 import Btn from '../../Button/component';
-import { LANG_EN, useLang } from '../../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../../LangContext/LangNoteBook';
+
+import { useTranslation } from 'react-i18next';
 
 const Main = () => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.section}>
         <div className={`container flex__wrap ${styles.section__main}`}>
           <div className={styles.section__about}>
-            <p className={styles.section__name}>
-              {lang === LANG_EN
-                ? dictionaryEnglish.myName
-                : dictionaryUkrainian.myName}
-            </p>
+            <p className={styles.section__name}>{t('myName')}</p>
             <h1 className={styles.section__title}>Front End Developer</h1>
-            <p className={styles.section__info}>
-              {lang === LANG_EN
-                ? dictionaryEnglish.preview
-                : dictionaryUkrainian.preview}
-            </p>
+            <p className={styles.section__info}>{t('preview')}</p>
             <div className={styles.section__href}>
-              <Btn
-                children={
-                  lang === LANG_EN
-                    ? dictionaryEnglish.aboutBtn
-                    : dictionaryUkrainian.aboutBtn
-                }
-                link={styles.section__link}
-              />
+              <Btn children={t('aboutBtn')} link={styles.section__link} />
               <div className={styles.section__tag}>
                 <img className={styles.section__tag_first} src={tag} alt="" />
                 <img className={styles.section__tag_second} src={tag} alt="" />

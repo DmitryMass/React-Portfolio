@@ -1,24 +1,26 @@
 import React from 'react';
-import { useLang } from './index';
+import i18n from '../../utils/i18n';
 import styles from './index.m.css';
 
 const LangBtn = () => {
-  const { changeToUa, changeToEn } = useLang();
+  const onChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
 
   return (
     <div className={styles.language__btns}>
-      <button
+      <input
+        type="button"
+        value="ua"
         className={`${styles.language__btn} ${styles.language__ua}`}
-        onClick={changeToUa}
-      >
-        UA
-      </button>
-      <button
+        onClick={onChange}
+      />
+      <input
+        type="button"
+        value="en"
         className={`${styles.language__btn} ${styles.language__en}`}
-        onClick={changeToEn}
-      >
-        EN
-      </button>
+        onClick={onChange}
+      />
     </div>
   );
 };

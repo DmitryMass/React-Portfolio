@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import styles from '../index.m.css';
 import PropTypes from 'prop-types';
 

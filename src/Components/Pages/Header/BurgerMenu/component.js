@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { headerLink } from '../../../Data/component';
@@ -8,11 +8,8 @@ import styles from '../index.m.css';
 import stylesMenu from './index.m.css';
 
 import PropTypes from 'prop-types';
-import { LANG_EN, useLang } from '../../../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../../../LangContext/LangNoteBook';
+
+import { useTranslation } from 'react-i18next';
 
 const Menu = ({
   header,
@@ -22,7 +19,7 @@ const Menu = ({
   menuActive,
   setMenuActive,
 }) => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
   return (
     <div
       className={
@@ -40,33 +37,15 @@ const Menu = ({
           {header}
         </div>
         <ul className={stylesMenu.menu__list}>
-          {lang === LANG_EN
-            ? dictionaryEnglish.headerLink.map((item) => {
-                return (
-                  <li key={nanoid()} className={stylesMenu.menu__link}>
-                    <Link
-                      onClick={() => setMenuActive(!menuActive)}
-                      to={item.link}
-                      className={`${styles.header__link} ${stylesMenu.menu__href}`}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                );
-              })
-            : dictionaryUkrainian.headerLink.map((item) => {
-                return (
-                  <li key={nanoid()} className={stylesMenu.menu__link}>
-                    <Link
-                      onClick={() => setMenuActive(!menuActive)}
-                      to={item.link}
-                      className={`${styles.header__link} ${stylesMenu.menu__href}`}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                );
-              })}
+          {headerLink.map(({ link, title }) => {
+            return (
+              <li key={nanoid()}>
+                <Link to={link} className={styles.header__link}>
+                  {t(title)}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <GitnLinkedin
           linkStyle={linkStyle}

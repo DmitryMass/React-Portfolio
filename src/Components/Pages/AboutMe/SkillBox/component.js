@@ -2,20 +2,14 @@ import React from 'react';
 import { skills } from '../../../Data/component';
 import styles from '../index.m.css';
 import { nanoid } from 'nanoid';
-import { LANG_EN, useLang } from '../../../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../../../LangContext/LangNoteBook';
+import { useTranslation } from 'react-i18next';
 
 const SkillBox = () => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
 
   return (
     <ul className={styles.main__skillBox}>
-      <li className={styles.main__mySkill}>
-        {lang === LANG_EN ? dictionaryEnglish.skill : dictionaryUkrainian.skill}
-      </li>
+      <li className={styles.main__mySkill}>{t('skill')}</li>
       {skills.map((item) => {
         return (
           <li className={styles.main__skill} key={nanoid()}>

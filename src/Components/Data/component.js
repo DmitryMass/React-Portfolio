@@ -6,15 +6,15 @@ import person from '../../Assets/Icons/person.svg';
 
 export const headerLink = [
   {
-    title: 'Home',
+    title: 'home',
     link: ROUTES.HOME,
   },
   {
-    title: 'About',
+    title: 'about',
     link: ROUTES.ABOUT,
   },
   {
-    title: 'Portfolio',
+    title: 'portfolio',
     link: ROUTES.PORTFOLIO,
   },
 ];
@@ -36,28 +36,30 @@ export const headerLinkUa = [
 
 export const contactList = [
   {
-    title: 'dimamikron41@gmail.com',
+    title: 'Contact with me in Gmail',
     picture: gmail,
+    href: 'mailto:dimamikron41@gmail.com',
   },
   {
     title: '+380505634338',
     picture: person,
   },
   {
-    title: '@Dmitry_Mass',
+    title: 'Contact with me in Telegramm',
     picture: telegramm,
+    href: 'https://telegram.me/Dmitry_Mass',
   },
 ];
 
 export const skills = [
   'HTML5',
-  'CSS(SCSS)',
-  'JavaScript(ES6+)',
+  'CSS3 (SCSS)',
+  'JavaScript (ES6+)',
   'React (React-Component, Hooks, Router)',
   'React (Formik(Yup), PropTypes, Ant, MUI)',
-  'Redux / Redux-Thunk',
+  'Redux / Redux Toolkit / RTK Query',
   'CSS Modules',
-  'NodeJs (Fastify)(Basic)',
+  'Basic NodeJs (Fastify)',
   'Postman',
   'Npm',
   'Webpack/Babel',

@@ -3,6 +3,7 @@ import { headerLink, headerLinkUa } from '../Data/component';
 export const dictionaryEnglish = {
   headerLink: headerLink,
   myName: 'Dmitry Moskalenko',
+  contact: 'Contact',
   preview:
     "Hi there, I'm a Ukraine based front end developer (JavaScript/React) focused on crafting clean && user friendly experiences.",
   aboutBtn: 'About me',
@@ -48,6 +49,11 @@ export const dictionaryEnglish = {
   myPortfolio: 'Portfolio (ReactJs/Hooks/Router/ModuleCSS) + Webpack/Babel',
   rickMorty: 'Rick and Morty Fan Page (React/Redux)',
   uichat: 'UI Chat (React/Redux/WebSocket)',
+  home: 'Home',
+  about: 'About',
+  portfolio: 'Portfolio',
+  jWallet: 'Wallet App (Task on the position Trainee/Junior)',
+  jStore: 'Mini Store',
 };
 
 export const dictionaryUkrainian = {
@@ -56,9 +62,10 @@ export const dictionaryUkrainian = {
   preview:
     'Привіт, я український фронтенд-розробник (JavaScript/React), який зосереджується на створенні чистих && зручних для користувачів інтерфейсів.',
   aboutBtn: 'Про мене',
+  contact: 'Контакти',
   skill: 'Мої навички',
   more: 'Детальніше',
-  disignedBy: 'Розроблено',
+  disignedBy: 'Розроблено:',
   summaryTitle: 'Резюме',
   summary: `Шукаю повну/неповну зайнятість або віддалену роботу в якості Trainee/Junior
   Front End розробника. Маю некомерційний досвід створення
@@ -100,4 +107,9 @@ export const dictionaryUkrainian = {
   myPortfolio: 'Портфоліо (ReactJs/Hooks/Router/ModuleCSS) + Webpack/Babel',
   rickMorty: 'Фан сторінка Рік та Морті (React/Redux)',
   uichat: 'Чат (React/Redux/WebSocket)',
+  home: 'Головна',
+  about: 'Про мене',
+  portfolio: 'Портфоліо',
+  jWallet: 'Гаманець (завдання на позицію Trainee/Junior)',
+  jStore: 'Міні магазин',
 };

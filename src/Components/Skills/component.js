@@ -15,22 +15,15 @@ import Skill from './Skill-box/component';
 import Btn from '../Button/component';
 
 import PropTypes from 'prop-types';
-import { LANG_EN, useLang } from '../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../LangContext/LangNoteBook';
+
+import { useTranslation } from 'react-i18next';
 
 const Skills = ({ btnStyle, linkStyle }) => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
   return (
     <main className={styles.main}>
       <div className="container">
-        <h3 className={styles.main__mySkill}>
-          {lang === LANG_EN
-            ? dictionaryEnglish.skill
-            : dictionaryUkrainian.skill}
-        </h3>
+        <h3 className={styles.main__mySkill}>{t('skill')}</h3>
         <div className={` ${styles.main__skills} grid__wrap`}>
           <Skill svgIcon={htmlSvg} children="HTML" />
           <Skill svgIcon={cssSvg} children="CSS" />
@@ -42,14 +35,7 @@ const Skills = ({ btnStyle, linkStyle }) => {
           <Skill svgIcon={webpackSvg} children="Webpack" />
         </div>
         <div className={btnStyle}>
-          <Btn
-            children={
-              lang === LANG_EN
-                ? dictionaryEnglish.more
-                : dictionaryUkrainian.more
-            }
-            link={linkStyle}
-          />
+          <Btn children={t('more')} link={linkStyle} />
         </div>
       </div>
     </main>

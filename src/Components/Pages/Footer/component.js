@@ -5,34 +5,31 @@ import { nanoid } from 'nanoid';
 import styles from './index.m.css';
 import Logo from '../../Logo/component';
 import PropTypes from 'prop-types';
-import { LANG_EN, useLang } from '../../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../../LangContext/LangNoteBook';
+
+import { useTranslation } from 'react-i18next';
 
 const Footer = ({ scrolls, handleLogoClick }) => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
   return (
     <footer ref={scrolls} className={styles.footer}>
       <div className="container flex__wrap-wrap">
         <ul>
-          {contactList.map(({ title, picture }) => {
+          {contactList.map(({ title, picture, href }) => {
             return (
               <li
                 className={`footer__flex ${styles.footer__li}`}
                 key={nanoid()}
               >
                 <object data={picture} type=""></object>
-                {title}
+                <a className={styles.footer__link} href={href} target="blank">
+                  {title}
+                </a>
               </li>
             );
           })}
         </ul>
         <div className={styles.footer__designed}>
-          {lang === LANG_EN
-            ? dictionaryEnglish.disignedBy
-            : dictionaryUkrainian.disignedBy}
+          {t('disignedBy')}
           <Logo
             handleLogoClick={handleLogoClick}
             logoStyle={styles.footer__logo}

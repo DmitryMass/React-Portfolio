@@ -1,45 +1,21 @@
 import React from 'react';
-import { LANG_EN, useLang } from '../../../LangContext';
-import {
-  dictionaryEnglish,
-  dictionaryUkrainian,
-} from '../../../LangContext/LangNoteBook';
+import { useTranslation } from 'react-i18next';
 import Title from '../AboutBox/component';
 import styles from '../index.m.css';
 
 const ExperienceBox = () => {
-  const { lang } = useLang();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.main__experienceBox}>
       <Title
-        children={
-          lang === LANG_EN
-            ? dictionaryEnglish.experienceTitle
-            : dictionaryUkrainian.experienceTitle
-        }
+        children={t('experienceTitle')}
         classStyle={styles.main__mySkill}
       />
-      <h2 className={styles.main__subtitle}>
-        {lang === LANG_EN
-          ? dictionaryEnglish.position
-          : dictionaryUkrainian.position}
-      </h2>
-      <p className={styles.main__experience}>
-        {lang === LANG_EN
-          ? dictionaryEnglish.goodsSales
-          : dictionaryUkrainian.goodsSales}
-      </p>
-      <p className={styles.main__experience}>
-        {lang === LANG_EN
-          ? dictionaryEnglish.interview
-          : dictionaryUkrainian.interview}
-      </p>
-      <p className={styles.main__experience}>
-        {lang === LANG_EN
-          ? dictionaryEnglish.otherWork
-          : dictionaryUkrainian.otherWork}
-      </p>
+      <h2 className={styles.main__subtitle}>{t('position')}</h2>
+      <p className={styles.main__experience}>{t('goodsSales')}</p>
+      <p className={styles.main__experience}>{t('interview')}</p>
+      <p className={styles.main__experience}>{t('otherWork')}</p>
     </div>
   );
 };

@@ -13,11 +13,13 @@
   "dependencies": {
     "eslint-plugin-react-hooks": "^4.5.0",
     "formik": "^2.2.9",
+    "i18next": "^21.9.0",
     "nanoid": "^3.3.4",
     "prettier": "^2.6.2",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-i18next": "^11.18.3",
     "react-router-dom": "^6.3.0",
     "yup": "^0.32.11"
   },
