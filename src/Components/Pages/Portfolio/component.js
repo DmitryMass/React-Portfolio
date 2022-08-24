@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Zoom, Navigation, FreeMode } from 'swiper';
+import { Zoom, Navigation, FreeMode, Autoplay } from 'swiper';
 import Slide from './Slide/component';
 import styles from './index.m.css';
 import { nanoid } from 'nanoid';
@@ -12,14 +12,18 @@ const Portfolio = () => {
 
   return (
     <article className={styles.slide__menu}>
-      <div className="container">
+      <div className='container'>
         <Swiper
           zoom={true}
           navigation={true}
           freeMode={true}
-          modules={[Navigation, FreeMode, Zoom]}
+          modules={[Navigation, FreeMode, Autoplay, Zoom]}
           grabCursor={true}
           loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
         >
           {PORTFOLIO.map(({ img, description, link }) => {
             return (

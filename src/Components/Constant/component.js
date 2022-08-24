@@ -1,13 +1,23 @@
+//  PORTFOLIO SECTION PAGE
 import jWallet from '../../Assets/Images/j-wallet.png';
 import clock from '../../Assets/Images/clocks.png';
 import weather from '../../Assets/Images/weather.png';
 import myPortfolio from '../../Assets/Images/portfolio.png';
 import contacts from '../../Assets/Images/contacts.png';
-import todoReact from '../../Assets/Images/crud-todo-react.png';
 import rickAndMorty from '../../Assets/Images/ricknmorty.png';
 import uiChat from '../../Assets/Images/uichat.png';
 import jStore from '../../Assets/Images/j-store.png';
 import jWalletServer from '../../Assets/Images/jWallet-server.png';
+//SKILL SECTION (MAIN)
+import htmlSvg from '../../Assets/Icons/html.svg';
+import cssSvg from '../../Assets/Icons/css.svg';
+import webpackSvg from '../../Assets/Icons/webpack.svg';
+import jsSvg from '../../Assets/Icons/js.svg';
+import figmaSvg from '../../Assets/Icons/figma.svg';
+import reactSvg from '../../Assets/Icons/react.svg';
+import sassSvg from '../../Assets/Icons/sass.svg';
+import nodejsSvg from '../../Assets/Icons/nodejs.svg';
+import reduxSvg from '../../Assets/Icons/redux.svg';
 
 export const ROUTES = {
   HOME: '/',
@@ -88,5 +98,44 @@ export const PROJECTS_LIST = [
   {
     link: 'https://github.com/DmitryMass/ContactList_Redux_ReduxThunk',
     text: 'CRUD Contacts (React-Redux / Redux-Thunk / Formik(Yup) etc..)',
+  },
+];
+
+export const MYSKILL = [
+  {
+    icon: htmlSvg,
+    text: 'HTML',
+  },
+  {
+    icon: cssSvg,
+    text: 'CSS',
+  },
+  {
+    icon: sassSvg,
+    text: 'SASS',
+  },
+  {
+    icon: jsSvg,
+    text: 'JavaScript',
+  },
+  {
+    icon: reactSvg,
+    text: 'React',
+  },
+  {
+    icon: reduxSvg,
+    text: 'Redux',
+  },
+  {
+    icon: nodejsSvg,
+    text: 'NodeJS',
+  },
+  {
+    icon: figmaSvg,
+    text: 'Figma',
+  },
+  {
+    icon: webpackSvg,
+    text: 'Webpack',
   },
 ];
