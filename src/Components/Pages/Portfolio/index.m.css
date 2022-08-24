@@ -20,6 +20,14 @@
 .slide__menu {
   padding-top: 60px;
 }
+.slide__title {
+  color: var(--white);
+  font-size: var(--fs-md);
+  line-height: var(--lh-hg);
+  text-shadow: 0 0 4px var(--white);
+  padding-bottom: 25px;
+  text-align: center;
+}
 
 /* transform: translateX(-25%); */
 .slide__img {

@@ -13,6 +13,7 @@ const Portfolio = () => {
   return (
     <article className={styles.slide__menu}>
       <div className='container'>
+        <h3 className={styles.slide__title}>{t('portfolio')}</h3>
         <Swiper
           zoom={true}
           navigation={true}
