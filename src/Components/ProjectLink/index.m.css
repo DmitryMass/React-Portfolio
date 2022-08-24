@@ -1,0 +1,7 @@
+.main__project {
+  display: block;
+  padding-bottom: 10px;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  color: var(--white);
+}

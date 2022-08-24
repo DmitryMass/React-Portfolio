@@ -54,6 +54,7 @@ export const dictionaryEnglish = {
   portfolio: 'Portfolio',
   jWallet: 'Wallet App (Task on the position Trainee/Junior)',
   jStore: 'Mini Store',
+  jWalletServer: 'Wallet App + (NodeJs + PostgresQL)',
 };
 
 export const dictionaryUkrainian = {
@@ -112,4 +113,5 @@ export const dictionaryUkrainian = {
   portfolio: 'Портфоліо',
   jWallet: 'Гаманець (завдання на позицію Trainee/Junior)',
   jStore: 'Міні магазин',
+  jWalletServer: 'Гаманець повна версія (NodeJs, PostgresQL)',
 };

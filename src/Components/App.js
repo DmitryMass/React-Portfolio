@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <Suspense fallback={'Loading...'}>
-      <div className="application">
+      <div className='application'>
         <Header
           scrolls={logoRef}
           handleClick={handleClick}

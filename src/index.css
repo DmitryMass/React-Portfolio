@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import '../node_modules/swiper/swiper-bundle.css';
 
 :root {
   /* Colors && Bgc */
@@ -218,4 +219,9 @@
   border-radius: 4px;
 }
 
-/* Language Btns */
+/* Swiper Slider */
+.swiper-button-prev,
+.swiper-button-next {
+  top: 25%;
+  color: var(--coral);
+}

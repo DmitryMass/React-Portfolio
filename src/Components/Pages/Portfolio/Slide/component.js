@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Slide = ({ children, link, description, img }) => {
   return (
     <div className={styles.slide}>
-      <div className={styles.slide__img}>
+      <div className={`${styles.slide__img} swiper-zoom-container`}>
         <img src={img} alt="analytic website 1 page" />
       </div>
       <div className={styles.slide__description}>
