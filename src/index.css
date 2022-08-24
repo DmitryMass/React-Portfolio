@@ -226,3 +226,9 @@
   top: 25%;
   color: var(--coral);
 }
+@media screen and (max-width: 576px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}

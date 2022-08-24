@@ -18,7 +18,7 @@
   width: 900%;
 }
 .slide__menu {
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 /* transform: translateX(-25%); */
@@ -77,4 +77,10 @@
   height: 20px;
   position: relative;
   z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  .slide__menu {
+    padding-top: 30px;
+  }
 }
