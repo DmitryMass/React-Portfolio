@@ -53,12 +53,12 @@ export const PORTFOLIO = [
     description: 'myPortfolio',
   },
   {
-    link: 'https://github.com/DmitryMass/Clock-and-StopWatch"',
+    link: 'https://github.com/DmitryMass/Clock-and-StopWatch',
     img: clock,
     description: 'clock',
   },
   {
-    link: 'https://github.com/DmitryMass/React-Redux_Mini-Store"',
+    link: 'https://github.com/DmitryMass/React-Redux_Mini-Store',
     img: jStore,
     description: 'jStore',
   },
