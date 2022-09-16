@@ -9,6 +9,8 @@ or
 2. Npm start for start project
 3. Npm webpack \*for build
 
+![DESKTOP!](./src/Assets/Images/portfolio.png)
+
 Home - based Info
 About - my Cv and certificate
 Portfolio - some of my project
