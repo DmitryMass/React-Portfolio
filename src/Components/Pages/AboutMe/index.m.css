@@ -73,9 +73,6 @@
   margin: 0 auto;
   padding-bottom: 50px;
 }
-.main__summary a {
-  color: var(--blue);
-}
 
 .info__second {
   gap: 20px;

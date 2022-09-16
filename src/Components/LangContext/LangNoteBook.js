@@ -13,7 +13,7 @@ export const dictionaryEnglish = {
   summaryTitle: 'Summary',
   summary: `I'm looking for a full-time/part-time or remote job as a Trainee/Junior
   Front End Developer. I have non-commercial experience in creating
-  websites. Technologies used: HTML, CSS(SCSS), JavaScript, React (React-Redux/RTK/RTK Query), TypeScript,
+  websites. Technologies used: HTML, CSS(SCSS), JavaScript, React (React - Redux/RTK/RTK Query), TypeScript,
   NodeJs/Fastify. I would like to invite you to review some projects in
   my portfolio:`,
   myGit: 'And other in my profile on GitHub :',

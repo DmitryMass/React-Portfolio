@@ -3,7 +3,7 @@
   padding-bottom: 10px;
   font-size: var(--fs-sm);
   line-height: var(--lh-sm);
-  color: var(--white);
+  color: var(--summary-link);
 }
 .project__wrapper {
   margin-top: 10px;
