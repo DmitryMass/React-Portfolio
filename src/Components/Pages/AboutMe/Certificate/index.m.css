@@ -13,6 +13,7 @@
   display: block;
   padding-top: 15px;
   font-size: var(--fs-md);
+  line-height: var(--lh-md);
   text-align: center;
   color: var(--white);
   text-decoration: underline;

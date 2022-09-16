@@ -31,7 +31,7 @@
 
 .main__subtitle {
   font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
+  line-height: var(--lh-md);
   font-weight: var(--fw-bold);
   padding-bottom: 15px;
   color: var(--white);
@@ -42,7 +42,7 @@
 .main__experience {
   padding-bottom: 10px;
   font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
+  line-height: var(--lh-md);
   color: var(--white);
 }
 .main__experienceBox {
@@ -60,7 +60,7 @@
 }
 .main__courses {
   font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
+  line-height: var(--lh-md);
   color: var(--white);
   padding: 3px 0;
 }
