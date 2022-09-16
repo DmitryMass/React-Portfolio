@@ -55,6 +55,18 @@
 .main__project {
   display: block;
 }
+.main__degree {
+  margin-bottom: 20px;
+}
+.main__courses {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  color: var(--white);
+  padding: 3px 0;
+}
+.main__softSkills {
+  padding-top: 20px;
+}
 /* // */
 .main__summary {
   max-width: 850px;
@@ -78,10 +90,15 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 768px) {
   .info__last {
     flex-wrap: wrap;
     justify-content: start;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 30px 0;
   }
 }

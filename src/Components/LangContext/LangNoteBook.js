@@ -13,8 +13,8 @@ export const dictionaryEnglish = {
   summaryTitle: 'Summary',
   summary: `I'm looking for a full-time/part-time or remote job as a Trainee/Junior
   Front End Developer. I have non-commercial experience in creating
-  websites. Technologies used: HTML, CSS(SCSS), JavaScript, React, Redux,
-  NodeJs-Fastify (Basic). I would like to invite you to review some projects in
+  websites. Technologies used: HTML, CSS(SCSS), JavaScript, React (React-Redux/RTK/RTK Query), TypeScript,
+  NodeJs/Fastify. I would like to invite you to review some projects in
   my portfolio:`,
   myGit: 'And other in my profile on GitHub :',
   educationTitle: 'Education',
@@ -25,6 +25,9 @@ export const dictionaryEnglish = {
     'Basic Course - Front End Basic (HTML/CSS/SCSS) 08.2021 - 11.2021',
   advancedCourse: `In-depth course - Front End Pro (Advanced). JavaScript + React 12.2021 -
   06.2022`,
+  udemyFirst: 'Udemy: JavaScript + React (Ivan Petrichenko)',
+  udemySecond: 'Udemy: React + Redux (Juriy Bura)',
+  udemyThirdL: 'Udemy: Understanding TypeScript (Maximilian Schwarzmuller)',
   additionalInfo: 'Additional information',
   language: 'English - Pre-Intermediate (A2)',
   experienceTitle: 'Work Experience',
@@ -39,6 +42,7 @@ export const dictionaryEnglish = {
   teamworker: 'Teamworker',
   basicCertificate: 'Front End Basic (Certificate)',
   advancedCertificate: 'Front End Advanced (Certificate)',
+  traineeCertificate: 'Trainee Evo Fintech (Fintech Product in Ukraine)',
   portfolioLink: 'Link',
   crudContacts: 'CRUD Contacts (React-Redux / Redux-Thunk / Formik(Yup) etc..)',
   analytics: 'Analytics Website (1 page) HTML/SCSS/JavaScript',
@@ -54,7 +58,9 @@ export const dictionaryEnglish = {
   portfolio: 'Portfolio',
   jWallet: 'Wallet App (Task on the position Trainee/Junior)',
   jStore: 'Mini Store',
-  jWalletServer: 'Wallet App + (NodeJs + PostgresQL)',
+  jWalletServer: 'Wallet App + (NodeJs + PostgreSQL)',
+  rnmFan: 'Rick and Morty (React + TypeScript /RTK-Query etc)',
+  honey: 'Own website. HoneyParadise (React/NodeJS/PostgreSQL etc)',
 };
 
 export const dictionaryUkrainian = {
@@ -70,8 +76,8 @@ export const dictionaryUkrainian = {
   summaryTitle: 'Резюме',
   summary: `Шукаю повну/неповну зайнятість або віддалену роботу в якості Trainee/Junior
   Front End розробника. Маю некомерційний досвід створення
-  веб-сторінок. Використовую технології: HTML, CSS(SCSS), JavaScript, React, Redux,
-  NodeJs-Fastify (Basic). Я хотів би запросити вас переглянути деякі проєкти в
+  веб-сторінок. Використовую технології: HTML, CSS(SCSS), JavaScript, React (React-Redux/RTK/RTK Query), TypeScript,
+  NodeJs/Fastify. Я хотів би запросити вас переглянути деякі проєкти в
   моєму портфоліо:`,
   myGit: 'Та інші в моєму профілі на GitHub:',
   educationTitle: 'Освіта',
@@ -83,6 +89,9 @@ export const dictionaryUkrainian = {
     'Базовий курс - Front End Basic (HTML/CSS/SCSS) 08.2021 - 11.2021',
   advancedCourse: `Просунутий курс - Front End Pro (Advanced). JavaScript + React 12.2021 -
     06.2022`,
+  udemyFirst: 'Udemy: JavaScript + React (Іван Петриченко)',
+  udemySecond: 'Udemy: React + Redux (Юрій Бура)',
+  udemyThirdL: 'Udemy: Understanding TypeScript (Максиміліан Шварцмюллер)',
   additionalInfo: 'Додаткова інформація',
   language: 'Англійська нижче середнього (A2)',
   experienceTitle: 'Досвід роботи',
@@ -97,6 +106,7 @@ export const dictionaryUkrainian = {
   teamworker: 'Командний працівник',
   basicCertificate: 'Front End Базовий (Сертифікат)',
   advancedCertificate: 'Front End Просунутий (Сертифікат)',
+  traineeCertificate: 'Trainee Evo Fintech (Фінтех продукти в Україні)',
   portfolioLink: 'Посилання',
   crudContacts:
     'Контакти (CRUD - React-Redux / Redux-Thunk / Formik (Yup) тощо)',
@@ -113,5 +123,7 @@ export const dictionaryUkrainian = {
   portfolio: 'Портфоліо',
   jWallet: 'Гаманець (завдання на позицію Trainee/Junior)',
   jStore: 'Міні магазин',
-  jWalletServer: 'Гаманець повна версія (NodeJs, PostgresQL)',
+  jWalletServer: 'Гаманець повна версія (NodeJs, PostgreSQL)',
+  rnmFan: 'Фан сторінка Рік та Морті (React + TypeScript /RTK-Query etc)',
+  honey: 'Медовий рай. Власний сайт (React/NodeJS/PostgreSQL)',
 };

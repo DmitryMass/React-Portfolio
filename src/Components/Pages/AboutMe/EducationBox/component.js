@@ -14,8 +14,11 @@ const EducationBox = () => {
         children={t('additionalEducation')}
         classStyle={styles.main__mySkill}
       />
-      <p className={styles.main__degree}>{t('basicCourse')}</p>
-      <p className={styles.main__degree}>{t('advancedCourse')}</p>
+      <p className={styles.main__courses}>{t('basicCourse')}</p>
+      <p className={styles.main__courses}>{t('advancedCourse')}</p>
+      <p className={styles.main__courses}>{t('udemyFirst')}</p>
+      <p className={styles.main__courses}>{t('udemySecond')}</p>
+      <p className={styles.main__courses}>{t('udemyThirdL')}</p>
     </div>
   );
 };

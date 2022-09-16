@@ -8,10 +8,10 @@ const EachCertificate = ({ children, link, imgClass, src, onImgClick }) => {
       <img
         className={imgClass}
         src={src}
-        alt="My basic certificate"
+        alt='My basic certificate'
         onClick={onImgClick}
       />
-      <a href={link} target="blank">
+      <a href={link} target='blank'>
         {children}
       </a>
     </div>
@@ -20,7 +20,7 @@ const EachCertificate = ({ children, link, imgClass, src, onImgClick }) => {
 
 EachCertificate.propTypes = {
   children: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   imgClass: PropTypes.string.isRequired,
   onImgClick: PropTypes.func.isRequired,
   src: PropTypes.string.isRequired,

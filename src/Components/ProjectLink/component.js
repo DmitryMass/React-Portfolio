@@ -6,7 +6,7 @@ import styles from './index.m.css';
 
 const Project = () => {
   return (
-    <>
+    <div className={styles.project__wrapper}>
       {PROJECTS_LIST.map(({ link, text }) => {
         return (
           <a
@@ -19,7 +19,7 @@ const Project = () => {
           </a>
         );
       })}
-    </>
+    </div>
   );
 };
 

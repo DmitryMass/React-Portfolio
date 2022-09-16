@@ -31,3 +31,10 @@
   max-width: 100%;
   cursor: zoom-out;
 }
+
+@media screen and (max-width: 576px) {
+  .fe__basic > a,
+  .fe__pro > a {
+    font-size: var(--fs-sm);
+  }
+}

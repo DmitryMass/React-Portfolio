@@ -5,3 +5,6 @@
   line-height: var(--lh-sm);
   color: var(--white);
 }
+.project__wrapper {
+  margin-top: 10px;
+}

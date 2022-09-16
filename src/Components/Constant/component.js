@@ -8,6 +8,8 @@ import rickAndMorty from '../../Assets/Images/ricknmorty.png';
 import uiChat from '../../Assets/Images/uichat.png';
 import jStore from '../../Assets/Images/j-store.png';
 import jWalletServer from '../../Assets/Images/jWallet-server.png';
+import rnmFan from '../../Assets/Images/rnm-fan.png';
+import honey from '../../Assets/Images/honey.png';
 //SKILL SECTION (MAIN)
 import htmlSvg from '../../Assets/Icons/html.svg';
 import cssSvg from '../../Assets/Icons/css.svg';
@@ -31,6 +33,16 @@ export const PORTFOLIO = [
     link: 'https://github.com/DmitryMass/Wallet-App-Client',
     img: jWalletServer,
     description: 'jWalletServer',
+  },
+  {
+    link: 'https://github.com/DmitryMass/Rick_N_Morty_TS-version',
+    img: rnmFan,
+    description: 'rnmFan',
+  },
+  {
+    link: 'https://github.com/DmitryMass/Honey-App-Client',
+    img: honey,
+    description: 'honey',
   },
   {
     link: 'https://github.com/DmitryMass/Wallet-App_ftech',
@@ -77,7 +89,15 @@ export const PORTFOLIO = [
 export const PROJECTS_LIST = [
   {
     link: 'https://github.com/DmitryMass/Wallet-App-Client',
-    text: 'Wallet-App Full Version + (NodeJs / PostgresQL)',
+    text: 'Wallet-App Full Version (React/NodeJS/PostgreSQL etc)',
+  },
+  {
+    link: 'https://github.com/DmitryMass/Honey-App-Client',
+    text: 'Own website. Honey-Paradise (React/NodeJS/PostgreSQL etc)',
+  },
+  {
+    link: 'https://github.com/DmitryMass/Rick_N_Morty_TS-version',
+    text: 'Rick and Morty (fan page) TypeScript Version',
   },
   {
     link: 'https://github.com/DmitryMass/Wallet-App_ftech',
