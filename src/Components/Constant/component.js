@@ -20,6 +20,7 @@ import reactSvg from '../../Assets/Icons/react.svg';
 import sassSvg from '../../Assets/Icons/sass.svg';
 import nodejsSvg from '../../Assets/Icons/nodejs.svg';
 import reduxSvg from '../../Assets/Icons/redux.svg';
+import typeScriptLogo from '../../Assets/Icons/typescript-logo.svg';
 
 export const ROUTES = {
   HOME: '/',
@@ -145,6 +146,14 @@ export const MYSKILL = [
   {
     icon: reduxSvg,
     text: 'Redux',
+  },
+  {
+    icon: reduxSvg,
+    text: 'RTK/RTK Query',
+  },
+  {
+    icon: typeScriptLogo,
+    text: 'TypeScript',
   },
   {
     icon: nodejsSvg,

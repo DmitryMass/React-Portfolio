@@ -15,7 +15,6 @@ import '../utils/i18n';
 
 const App = () => {
   const { ref, logoRef, handleClick, handleLogoClick } = useScrollRef();
-
   return (
     <Suspense fallback={'Loading...'}>
       <div className='application'>
