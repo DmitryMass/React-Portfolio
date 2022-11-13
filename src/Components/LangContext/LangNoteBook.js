@@ -61,6 +61,7 @@ export const dictionaryEnglish = {
   jWalletServer: 'Wallet App + (NodeJs + PostgreSQL)',
   rnmFan: 'Rick and Morty (React + TypeScript /RTK-Query etc)',
   honey: 'Own website. HoneyParadise (React/NodeJS/PostgreSQL etc)',
+  lang4u: 'Lang4U Online course. (MERN + TS)',
 };
 
 export const dictionaryUkrainian = {
@@ -126,4 +127,5 @@ export const dictionaryUkrainian = {
   jWalletServer: 'Гаманець повна версія (NodeJs, PostgreSQL)',
   rnmFan: 'Фан сторінка Рік та Морті (React + TypeScript /RTK-Query etc)',
   honey: 'Медовий рай. Власний сайт (React/NodeJS/PostgreSQL)',
+  lang4u: 'Lang4U курси іноземних мов (MERN + TS)',
 };

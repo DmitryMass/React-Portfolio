@@ -10,6 +10,7 @@ import jStore from '../../Assets/Images/j-store.png';
 import jWalletServer from '../../Assets/Images/jWallet-server.png';
 import rnmFan from '../../Assets/Images/rnm-fan.png';
 import honey from '../../Assets/Images/honey.png';
+import lang4u from '../../Assets/Images/main.png';
 //SKILL SECTION (MAIN)
 import htmlSvg from '../../Assets/Icons/html.svg';
 import cssSvg from '../../Assets/Icons/css.svg';
@@ -33,10 +34,16 @@ export const ROUTES = {
 
 export const PORTFOLIO = [
   {
+    link: 'https://github.com/DmitryMass/Lang4U_Project',
+    img: lang4u,
+    description: 'lang4u',
+  },
+  {
     link: 'https://github.com/DmitryMass/Wallet-App-Client',
     img: jWalletServer,
     description: 'jWalletServer',
   },
+
   {
     link: 'https://github.com/DmitryMass/Rick_N_Morty_TS-version',
     img: rnmFan,
