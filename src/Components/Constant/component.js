@@ -21,6 +21,8 @@ import sassSvg from '../../Assets/Icons/sass.svg';
 import nodejsSvg from '../../Assets/Icons/nodejs.svg';
 import reduxSvg from '../../Assets/Icons/redux.svg';
 import typeScriptLogo from '../../Assets/Icons/typescript-logo.svg';
+import mongoIcon from '../../Assets/Icons/mongodb.svg';
+import postgresqlIcon from '../../Assets/Icons/postgresql.svg';
 
 export const ROUTES = {
   HOME: '/',
@@ -158,6 +160,14 @@ export const MYSKILL = [
   {
     icon: nodejsSvg,
     text: 'NodeJS',
+  },
+  {
+    icon: mongoIcon,
+    text: 'MongoDB',
+  },
+  {
+    icon: postgresqlIcon,
+    text: 'PostgreSQL',
   },
   {
     icon: figmaSvg,
