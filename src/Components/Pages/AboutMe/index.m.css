@@ -47,7 +47,8 @@
   color: var(--white);
 }
 .main__experienceBox {
-  max-width: 380px;
+  max-width: 530px;
+  width: 100%;
 }
 .main__education {
   padding-bottom: 20px;
