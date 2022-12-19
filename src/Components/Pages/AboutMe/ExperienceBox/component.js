@@ -12,10 +12,21 @@ const ExperienceBox = () => {
         children={t('experienceTitle')}
         classStyle={styles.main__mySkill}
       />
-      <h2 className={styles.main__subtitle}>{t('position')}</h2>
-      <p className={styles.main__experience}>{t('goodsSales')}</p>
-      <p className={styles.main__experience}>{t('interview')}</p>
-      <p className={styles.main__experience}>{t('otherWork')}</p>
+      <div>
+        <h2 className={styles.main__subtitle}>{t('frontPosition')}</h2>
+        <h2 className={styles.main__subtitle}>{t('frontFreelance')}</h2>
+        <p className={styles.main__experience}>{t('collaborated')}</p>
+        <p className={styles.main__experience}>{t('createdMap')}</p>
+        <p className={styles.main__experience}>{t('maintance')}</p>
+      </div>
+      <br />
+      <div>
+        <h2 className={styles.main__subtitle}>{t('position')}</h2>
+        <h2 className={styles.main__subtitle}>{t('positionAllo')}</h2>
+        <p className={styles.main__experience}>{t('goodsSales')}</p>
+        <p className={styles.main__experience}>{t('interview')}</p>
+        <p className={styles.main__experience}>{t('otherWork')}</p>
+      </div>
     </div>
   );
 };

@@ -12,6 +12,7 @@ const SoftSkillsBox = () => {
       <Title children={t('softSkillTitle')} classStyle={styles.main__mySkill} />
       <ul>
         <li className={styles.main__skill}>{t('adaptability')}</li>
+        <li className={styles.main__skill}>{t('communication')}</li>
         <li className={styles.main__skill}>{t('resultOriented')}</li>
         <li className={styles.main__skill}>{t('teamworker')}</li>
       </ul>

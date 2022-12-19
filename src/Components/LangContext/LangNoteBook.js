@@ -5,17 +5,15 @@ export const dictionaryEnglish = {
   myName: 'Dmitry Moskalenko',
   contact: 'Contact',
   preview:
-    "Hi there, I'm a Ukraine based front end developer (JavaScript/React) focused on crafting clean && user friendly experiences.",
+    "Hi there, I'm a Ukraine based Front-End Developer focused on crafting clean && user friendly experiences.",
   aboutBtn: 'About me',
   skill: 'My skills',
   more: 'Click for more',
   disignedBy: 'Designed by',
   summaryTitle: 'Summary',
-  summary: `I'm looking for a full-time/part-time or remote job as a Trainee/Junior
-  Front End Developer. I have non-commercial experience in creating
-  websites. Technologies used: HTML, CSS(SCSS), JavaScript, React (React - Redux/RTK/RTK Query), TypeScript,
-  NodeJs/Fastify. I would like to invite you to review some projects in
-  my portfolio:`,
+  summary: `I'm passionate junior front-end developer with a desire to learn and grow in a collaborative team environment.
+  Seeking for new opportunities and challenges that will expand my skill set and complement your company with a motivated specialist.  I have commercial (3 months) and non-commercial experience in creating websites. Technologies used:
+  React, Firebase, NodeJS, PostgreSQL etc.`,
   myGit: 'And other in my profile on GitHub :',
   educationTitle: 'Education',
   university: 'National Technical University Dnipro Polytechnic',
@@ -31,6 +29,14 @@ export const dictionaryEnglish = {
   additionalInfo: 'Additional information',
   language: 'English - Pre-Intermediate (A2)',
   experienceTitle: 'Work Experience',
+  frontPosition: 'Junior Front-End Developer',
+  frontFreelance: `Freelance with coach
+  September 2022 - December 2022`,
+  collaborated: `Collaborated with the coach to design new features for web application.`,
+  createdMap: `Created an interactive map and chat for clients. Stack React / Typescript / Redux-Toolkit / Firebase / Mapbox.`,
+  maintance: `Maintenance of code, debugging and solving client/server side problems `,
+  positionAllo: `Company LLC 'ALLO'
+  03.2019 - 02.2022`,
   position: 'Sales expert / Acting director',
   goodsSales: 'Sale of non-food products',
   interview: 'Interview of new employees',
@@ -40,6 +46,7 @@ export const dictionaryEnglish = {
   adaptability: 'Adaptability',
   resultOriented: 'Result oriented',
   teamworker: 'Teamworker',
+  communication: 'Communication',
   basicCertificate: 'Front End Basic (Certificate)',
   advancedCertificate: 'Front End Advanced (Certificate)',
   traineeCertificate: 'Trainee Evo Fintech (Fintech Product in Ukraine)',
@@ -68,18 +75,16 @@ export const dictionaryUkrainian = {
   headerLink: headerLinkUa,
   myName: 'Москаленко Дмитро',
   preview:
-    'Привіт, я український фронтенд-розробник (JavaScript/React), який зосереджується на створенні чистих && зручних для користувачів інтерфейсів.',
+    'Привіт, я український фронтенд-розробник, який зосереджується на створенні чистих && зручних для користувачів інтерфейсів.',
   aboutBtn: 'Про мене',
   contact: 'Контакти',
   skill: 'Мої навички',
   more: 'Детальніше',
   disignedBy: 'Розроблено:',
   summaryTitle: 'Резюме',
-  summary: `Шукаю повну/неповну зайнятість або віддалену роботу в якості Trainee/Junior
-  Front End розробника. Маю некомерційний досвід створення
-  веб-сторінок. Використовую технології: HTML, CSS(SCSS), JavaScript, React (React-Redux/RTK/RTK Query), TypeScript,
-  NodeJs/Fastify. Я хотів би запросити вас переглянути деякі проєкти в
-  моєму портфоліо:`,
+  summary: `Я запальний молодший фронт-енд розробник з бажанням навчатися та розвиватися в середовищі спільної команди. Шукаю нові можливості та виклики, які розширять мій набір навичок і доповнять вашу компанію мотивованим спеціалістом.
+  Маю комерційний (3 місяці) та некомерційний досвід створення сайтів. Використовую технології:
+  React, Firebase, NodeJS, PostgreSQL тощо.`,
   myGit: 'Та інші в моєму профілі на GitHub:',
   educationTitle: 'Освіта',
   university: 'Національний технінчий університет "Дніпровська політехніка" ',
@@ -96,6 +101,14 @@ export const dictionaryUkrainian = {
   additionalInfo: 'Додаткова інформація',
   language: 'Англійська нижче середнього (A2)',
   experienceTitle: 'Досвід роботи',
+
+  frontPosition: 'Junior Front-End Developer',
+  frontFreelance: `Фріланс з викладачем Вересень 2022 - Грудень 2022`,
+  collaborated: `Співпрацював із тренером для розробки нових функцій для веб-додатків.`,
+  createdMap: `Створив інтерактивну карту та чат для клієнтів. Технологічний стек React / Typescript / Redux-Toolkit / Firebase / Mapbox.`,
+  maintance: `Обслуговування коду, налагодження та вирішення проблем на стороні клієнт/сервер`,
+
+  positionAllo: 'ТОВ Алло 03.2019 - 02.2022',
   position: 'Експерт з продажу / ВО Директора',
   goodsSales: 'Продаж непродовольчих товарів',
   interview: 'Співбесіда нових співробітників',
@@ -105,6 +118,7 @@ export const dictionaryUkrainian = {
   adaptability: 'Адаптивність',
   resultOriented: 'Орієнтований на результат',
   teamworker: 'Командний працівник',
+  communication: 'Спілкування',
   basicCertificate: 'Front End Базовий (Сертифікат)',
   advancedCertificate: 'Front End Просунутий (Сертифікат)',
   traineeCertificate: 'Trainee Evo Fintech (Фінтех продукти в Україні)',

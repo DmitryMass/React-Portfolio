@@ -45,11 +45,6 @@ export const PORTFOLIO = [
   },
 
   {
-    link: 'https://github.com/DmitryMass/Rick_N_Morty_TS-version',
-    img: rnmFan,
-    description: 'rnmFan',
-  },
-  {
     link: 'https://github.com/DmitryMass/Honey-App-Client',
     img: honey,
     description: 'honey',
@@ -58,6 +53,11 @@ export const PORTFOLIO = [
     link: 'https://github.com/DmitryMass/Wallet-App_ftech',
     img: jWallet,
     description: 'jWallet',
+  },
+  {
+    link: 'https://github.com/DmitryMass/Rick_N_Morty_TS-version',
+    img: rnmFan,
+    description: 'rnmFan',
   },
   {
     link: 'https://github.com/DmitryMass/Rick_And_Morty_React-Redux',

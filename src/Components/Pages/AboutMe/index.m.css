@@ -27,6 +27,7 @@
 }
 .main__skillBox {
   max-width: 300px;
+  width: 100%;
 }
 
 .main__subtitle {

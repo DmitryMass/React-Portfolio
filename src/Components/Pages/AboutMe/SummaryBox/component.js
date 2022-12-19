@@ -11,7 +11,7 @@ const SummaryBox = () => {
     <div className={styles.main__summary}>
       <Title children={t('summaryTitle')} classStyle={styles.main__mySkill} />
       <p className={styles.main__skill}>{t('summary')}</p>
-      <Project />
+      {/* <Project />
       <div className={styles.main__skill}>
         {t('myGit')}
         <a
@@ -21,7 +21,7 @@ const SummaryBox = () => {
         >
           https://github.com/DmitryMass
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
